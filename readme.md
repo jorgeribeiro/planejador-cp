@@ -10,7 +10,7 @@ O curso possui uma estrutura específica, onde até o 6º período o estudante p
 - PHP
 - SQLite
 - Laravel
-- Bootstrap
+- [Bulma](https://bulma.io/)
 - Vue.js
 
 ## Dependências
