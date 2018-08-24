@@ -8,7 +8,7 @@ O curso possui uma estrutura específica, onde até o 6º período o estudante p
 
 ## Tecnologias
 - PHP
-- MySQL
+- SQLite
 - Laravel
 - Bootstrap
 - Vue.js
