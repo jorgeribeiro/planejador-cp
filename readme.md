@@ -11,13 +11,13 @@ O curso possui uma estrutura específica, onde até o 6º período o estudante p
 - MySQL
 - Laravel
 - Bootstrap
-- Vue.js ou Angular ou React.js (a definir)
+- Vue.js
 
 ## Dependências
 - PHP >= 5.6.4
 
 ## Instalação
-Construindo... Porém é certeza que precisa do gerenciador de dependências de PHP [Composer](https://getcomposer.org/). Se estiver interessado pode adiantar a instalação. Com o PHP instalado, rode os comandos:
+Em construção... Porém é certeza que precisa do gerenciador de dependências de PHP [Composer](https://getcomposer.org/). Se estiver interessado pode adiantar a instalação. Com o PHP instalado, rode os comandos:
 ```
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
