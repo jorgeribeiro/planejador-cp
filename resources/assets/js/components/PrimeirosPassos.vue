@@ -16,7 +16,7 @@
                     <div class="level-item">
                         <form method="POST" action="/entrar">
                             <div class="field">
-                                <label class="label">Nome completo</label>
+                                <label class="label">Nome</label>
                                 <div class="control">
                                     <input class="input" type="text" required>
                                 </div>
@@ -34,7 +34,7 @@
                                     </button>
                                 </div>
                             </div>
-                        </form>
+                        </form>                        
                     </div>
                 </nav>
             </div>
