@@ -17,6 +17,7 @@ O curso possui uma estrutura específica, onde até o 6º período o estudante p
 - PHP >= 5.6.4
 - Composer
 - npm
+- [Buefy (Vue.js componentes based on Bulma)](https://buefy.github.io/)
 
 ## Instalação
 Em construção... Porém é certeza que precisa do gerenciador de dependências de PHP [Composer](https://getcomposer.org/). Se estiver interessado pode adiantar a instalação. Com o PHP instalado, rode os comandos:
