@@ -43908,7 +43908,7 @@ var staticRenderFns = [
                     _c(
                       "button",
                       {
-                        staticClass: "button is-primary",
+                        staticClass: "button is-link",
                         attrs: { type: "submit" }
                       },
                       [
@@ -43927,7 +43927,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("footer", { staticClass: "footer" }, [
         _c("div", { staticClass: "content has-text-centered" }, [
-          _c("p", { staticClass: "has-text-primary" }, [
+          _c("p", { staticClass: "has-text-link" }, [
             _vm._v(
               "\n                Planejador CP foi feito por Jorge Ribeiro.\n            "
             )

@@ -29,7 +29,7 @@
                             </div>
                             <div class="field is-pulled-right">
                                 <div class="control">
-                                    <button type="submit" class="button is-primary">
+                                    <button type="submit" class="button is-link">
                                         Entrar
                                     </button>
                                 </div>
@@ -41,7 +41,7 @@
         </section>
         <footer class="footer">
             <div class="content has-text-centered">
-                <p class="has-text-primary">
+                <p class="has-text-link">
                     Planejador CP foi feito por Jorge Ribeiro.
                 </p>
                 <p>
