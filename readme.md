@@ -27,6 +27,13 @@ php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece38
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 ```
+## Salvando steps de instalação:
+- git clone nesse repositório
+- composer install dentro da pasta
+- renomear .env.example para .env e colocar o caminho correto do arquivo database.sqlite
+- rodar php artisan key:generate
+- php artisan serve para rodar a aplicação
+- executável em localhost:8000
 
 ## Referências
 - [COCOM - Coordenação de Ciência da Computação - UFMA](http://www.deinf.ufma.br/cocom/site/)
