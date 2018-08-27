@@ -17,6 +17,7 @@ window.Vue = require('vue');
 
 Vue.component('welcome', require('./components/Welcome.vue'));
 Vue.component('primeiros_passos', require('./components/PrimeirosPassos.vue'));
+Vue.component('planejador', require('./components/Planejador.vue'));
 
 const app = new Vue({
     el: '#app'
