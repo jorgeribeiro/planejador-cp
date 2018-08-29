@@ -15,4 +15,8 @@ Route::get('/', function () {
     return view('primeiros_passos');
 });
 
+Route::get('/planejador', function () {
+    return view('planejador');
+});
+
 Auth::routes();
