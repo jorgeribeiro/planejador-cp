@@ -15,6 +15,7 @@ O curso possui uma estrutura específica, onde até o 6º período o estudante p
 
 ## Dependências
 - PHP >= 5.6.4
+- PHP SQLite
 - Composer
 
 ## Instalação

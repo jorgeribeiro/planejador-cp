@@ -38,7 +38,7 @@ return [
     'guards' => [
         'web' => [
             'driver' => 'session',
-            'provider' => 'users',
+            'provider' => 'alunos',
         ],
 
         'api' => [
@@ -69,6 +69,11 @@ return [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],
+
+        'alunos' => [
+            'driver' => 'eloquent',
+            'model' => App\Aluno::class,
+        ]
 
         // 'users' => [
         //     'driver' => 'database',

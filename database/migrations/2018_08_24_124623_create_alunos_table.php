@@ -17,6 +17,7 @@ class CreateAlunosTable extends Migration
             $table->increments('id');
             $table->string('nome');
             $table->string('matricula');
+            $table->rememberToken();
             $table->timestamps();
         });
     }
@@ -28,8 +29,6 @@ class CreateAlunosTable extends Migration
      */
     public function down()
     {
-        Schema::table('alunos', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('alunos');
     }
 }

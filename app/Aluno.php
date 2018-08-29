@@ -2,9 +2,16 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Aluno extends Model
+class Aluno extends Authenticatable
 {
-    //
+    use Notifiable;
+
+    protected $table = 'alunos';
+
+    protected $fillable = [
+        'nome', 'matricula'
+    ];
 }
