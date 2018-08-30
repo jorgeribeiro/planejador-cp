@@ -14,4 +14,8 @@ class Aluno extends Authenticatable
     protected $fillable = [
         'nome', 'matricula'
     ];
+
+    protected $hidden = [
+        'remember_token'
+    ];
 }
