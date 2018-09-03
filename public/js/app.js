@@ -43753,7 +43753,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -43828,8 +43828,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+        };
+    }
+});
 
 /***/ }),
 /* 51 */
@@ -43839,135 +43846,161 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c("section", { staticClass: "section" }, [
+      _c("div", { staticClass: "box has-background-light" }, [
+        _c("h2", { staticClass: "title is-2 has-text-centered" }, [
+          _vm._v("Planejador CP (UFMA)")
+        ]),
+        _vm._v(" "),
+        _c("nav", { staticClass: "level" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "level-item" }, [
+            _c("form", { attrs: { method: "POST", action: "/login" } }, [
+              _c("input", {
+                attrs: { type: "hidden", name: "_token" },
+                domProps: { value: _vm.csrf }
+              }),
+              _vm._v(" "),
+              _vm._m(1),
+              _vm._v(" "),
+              _vm._m(2),
+              _vm._v(" "),
+              _vm._m(3)
+            ])
+          ])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _vm._m(4)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("section", { staticClass: "section" }, [
-        _c("div", { staticClass: "box has-background-light" }, [
-          _c("h2", { staticClass: "title is-2 has-text-centered" }, [
-            _vm._v("Planejador CP (UFMA)")
-          ]),
-          _vm._v(" "),
-          _c("nav", { staticClass: "level" }, [
-            _c("div", { staticClass: "level-item" }, [
-              _c("div", [
-                _c("p", { staticClass: "title" }, [_vm._v("Bem vindo!")]),
-                _vm._v(" "),
-                _c("p", { staticClass: "heading" }, [
-                  _vm._v(
-                    "Essa aplicação foi desenvolvida para auxiliar estudantes"
-                  ),
-                  _c("br"),
-                  _vm._v(
-                    " de Ciência da Computação da Universidade Federal do Maranhão, de forma a "
-                  ),
-                  _c("br"),
-                  _vm._v(
-                    " planejar as disciplinas a serem cursadas e completar a carga horária do curso.\n                        "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "heading" }, [
-                  _vm._v(
-                    "Para começar, preencha seu nome e matrícula nos campos ao lado.\n                        "
-                  )
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "level-item" }, [
-              _c("form", { attrs: { method: "POST", action: "/entrar" } }, [
-                _c("div", { staticClass: "field" }, [
-                  _c("label", { staticClass: "label" }, [_vm._v("Nome")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "control" }, [
-                    _c("input", {
-                      staticClass: "input",
-                      attrs: { type: "text", required: "" }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "field" }, [
-                  _c("label", { staticClass: "label" }, [_vm._v("Matrícula")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "control" }, [
-                    _c("input", {
-                      staticClass: "input",
-                      attrs: { type: "text", required: "" }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "field is-pulled-right" }, [
-                  _c("div", { staticClass: "control" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "button is-link",
-                        attrs: { type: "submit" }
-                      },
-                      [
-                        _vm._v(
-                          "\n                                    Entrar\n                                "
-                        )
-                      ]
-                    )
-                  ])
-                ])
-              ])
-            ])
-          ])
+    return _c("div", { staticClass: "level-item" }, [
+      _c("div", [
+        _c("p", { staticClass: "title" }, [_vm._v("Bem vindo!")]),
+        _vm._v(" "),
+        _c("p", { staticClass: "heading" }, [
+          _vm._v("Essa aplicação foi desenvolvida para auxiliar estudantes"),
+          _c("br"),
+          _vm._v(
+            " de Ciência da Computação da Universidade Federal do Maranhão, de forma a "
+          ),
+          _c("br"),
+          _vm._v(
+            " planejar as disciplinas a serem cursadas e completar a carga horária do curso.\n                        "
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "heading" }, [
+          _vm._v(
+            "Para começar, preencha seu nome e matrícula nos campos ao lado.\n                        "
+          )
         ])
-      ]),
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Nome")]),
       _vm._v(" "),
-      _c("footer", { staticClass: "footer" }, [
-        _c("div", { staticClass: "content has-text-centered" }, [
-          _c("p", { staticClass: "has-text-link" }, [
+      _c("div", { staticClass: "control" }, [
+        _c("input", {
+          staticClass: "input",
+          attrs: { type: "text", id: "nome", name: "nome", required: "" }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Matrícula")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "control" }, [
+        _c("input", {
+          staticClass: "input",
+          attrs: {
+            type: "text",
+            id: "matricula",
+            name: "matricula",
+            required: ""
+          }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field is-pulled-right" }, [
+      _c("div", { staticClass: "control" }, [
+        _c(
+          "button",
+          { staticClass: "button is-link", attrs: { type: "submit" } },
+          [
             _vm._v(
-              "\n                Planejador CP foi feito por Jorge Ribeiro.\n            "
+              "\n                                    Entrar\n                                "
             )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _c(
-              "a",
-              {
-                attrs: {
-                  target: "_blank",
-                  href: "https://www.linkedin.com/in/joorgeribeeiro/"
-                }
-              },
-              [_c("i", { staticClass: "fab fa-linkedin-in fa-2x" })]
-            ),
-            _vm._v("\n                 \n                "),
-            _c(
-              "a",
-              {
-                attrs: {
-                  target: "_blank",
-                  href: "https://github.com/jorgimello"
-                }
-              },
-              [_c("i", { staticClass: "fab fa-github fa-2x" })]
-            ),
-            _vm._v("\n                 \n                "),
-            _c(
-              "a",
-              {
-                attrs: {
-                  target: "_blank",
-                  href: "https://www.facebook.com/joorgeribeeiro"
-                }
-              },
-              [_c("i", { staticClass: "fab fa-facebook fa-2x" })]
-            )
-          ])
+          ]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("footer", { staticClass: "footer" }, [
+      _c("div", { staticClass: "content has-text-centered" }, [
+        _c("p", { staticClass: "has-text-link" }, [
+          _vm._v(
+            "\n                Planejador CP foi feito por Jorge Ribeiro.\n            "
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _c(
+            "a",
+            {
+              attrs: {
+                target: "_blank",
+                href: "https://www.linkedin.com/in/joorgeribeeiro/"
+              }
+            },
+            [_c("i", { staticClass: "fab fa-linkedin-in fa-2x" })]
+          ),
+          _vm._v("\n                 \n                "),
+          _c(
+            "a",
+            {
+              attrs: { target: "_blank", href: "https://github.com/jorgimello" }
+            },
+            [_c("i", { staticClass: "fab fa-github fa-2x" })]
+          ),
+          _vm._v("\n                 \n                "),
+          _c(
+            "a",
+            {
+              attrs: {
+                target: "_blank",
+                href: "https://www.facebook.com/joorgeribeeiro"
+              }
+            },
+            [_c("i", { staticClass: "fab fa-facebook fa-2x" })]
+          )
         ])
       ])
     ])
@@ -44068,7 +44101,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -44079,66 +44112,6 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -44154,140 +44127,9 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div")
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("section", { staticClass: "section" }, [
-        _c("div", { staticClass: "box has-background-light" }, [
-          _c("h2", { staticClass: "title is-2 has-text-centered" }, [
-            _vm._v("Planejador CP (UFMA)")
-          ]),
-          _vm._v(" "),
-          _c("nav", { staticClass: "level" }, [
-            _c("div", { staticClass: "level-item" }, [
-              _c("div", [
-                _c("p", { staticClass: "title" }, [_vm._v("Bem vindo!")]),
-                _vm._v(" "),
-                _c("p", { staticClass: "heading" }, [
-                  _vm._v(
-                    "Essa aplicação foi desenvolvida para auxiliar estudantes"
-                  ),
-                  _c("br"),
-                  _vm._v(
-                    " de Ciência da Computação da Universidade Federal do Maranhão, de forma a "
-                  ),
-                  _c("br"),
-                  _vm._v(
-                    " planejar as disciplinas a serem cursadas e completar a carga horária do curso.\n                        "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "heading" }, [
-                  _vm._v(
-                    "Para começar, preencha seu nome e matrícula nos campos ao lado.\n                        "
-                  )
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "level-item" }, [
-              _c("form", { attrs: { method: "POST", action: "/entrar" } }, [
-                _c("div", { staticClass: "field" }, [
-                  _c("label", { staticClass: "label" }, [_vm._v("Nome")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "control" }, [
-                    _c("input", {
-                      staticClass: "input",
-                      attrs: { type: "text", required: "" }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "field" }, [
-                  _c("label", { staticClass: "label" }, [_vm._v("Matrícula")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "control" }, [
-                    _c("input", {
-                      staticClass: "input",
-                      attrs: { type: "text", required: "" }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "field is-pulled-right" }, [
-                  _c("div", { staticClass: "control" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "button is-link",
-                        attrs: { type: "submit" }
-                      },
-                      [
-                        _vm._v(
-                          "\n                                    Entrar\n                                "
-                        )
-                      ]
-                    )
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("footer", { staticClass: "footer" }, [
-        _c("div", { staticClass: "content has-text-centered" }, [
-          _c("p", { staticClass: "has-text-link" }, [
-            _vm._v(
-              "\n                Planejador CP foi feito por Jorge Ribeiro.\n            "
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _c(
-              "a",
-              {
-                attrs: {
-                  target: "_blank",
-                  href: "https://www.linkedin.com/in/joorgeribeeiro/"
-                }
-              },
-              [_c("i", { staticClass: "fab fa-linkedin-in fa-2x" })]
-            ),
-            _vm._v("\n                 \n                "),
-            _c(
-              "a",
-              {
-                attrs: {
-                  target: "_blank",
-                  href: "https://github.com/jorgimello"
-                }
-              },
-              [_c("i", { staticClass: "fab fa-github fa-2x" })]
-            ),
-            _vm._v("\n                 \n                "),
-            _c(
-              "a",
-              {
-                attrs: {
-                  target: "_blank",
-                  href: "https://www.facebook.com/joorgeribeeiro"
-                }
-              },
-              [_c("i", { staticClass: "fab fa-facebook fa-2x" })]
-            )
-          ])
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {

@@ -14,17 +14,18 @@
                         </div>
                     </div>
                     <div class="level-item">
-                        <form method="POST" action="/entrar">
+                        <form method="POST" action="/login">
+                        <input type="hidden" name="_token" :value="csrf">
                             <div class="field">
                                 <label class="label">Nome</label>
                                 <div class="control">
-                                    <input class="input" type="text" required>
+                                    <input class="input" type="text" id="nome" name="nome" required>
                                 </div>
                             </div>
                             <div class="field">
                                 <label class="label">Matrícula</label>
                                 <div class="control">
-                                    <input class="input" type="text" required>
+                                    <input class="input" type="text" id="matricula" name="matricula" required>
                                 </div>
                             </div>
                             <div class="field is-pulled-right">
@@ -63,7 +64,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data() {
+        return {
+            csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+        }
+    }
+};
 </script>
 
 <style>

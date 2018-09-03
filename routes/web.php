@@ -12,9 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('primeiros_passos')->name('home');
+    return view('primeiros_passos');
 });
+
+Route::get('/planejador', 'PlanejadorController@index');
+
+Route::get('/login', 'SessionsController@create')->name('login');
 
 Route::post('/login', 'SessionsController@store');
 
-Auth::routes();
+Route::get('/logout', 'SessionsController@destroy');
