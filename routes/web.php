@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('primeiros_passos');
 });
 
-Route::get('/planejador', 'PlanejadorController@index');
+Route::get('/planejador', 'PlanejadorController@index')->name('home');
 
 Route::get('/login', 'SessionsController@create')->name('login');
 

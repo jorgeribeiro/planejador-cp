@@ -23,9 +23,9 @@ class SessionsController extends Controller
                 'nome' => request('nome'),
                 'matricula' => request('matricula')
             ]);
-        }
-        auth()->login($aluno);
-        return redirect('/planejador');
+            auth()->login($aluno);
+        }        
+        return redirect()->home();
     }
 
     public function destroy() {
